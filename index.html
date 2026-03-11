@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Sorting Algorithm Visualizer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>Sorting Algorithm Visualizer</h1>
+
+<div class="controls">
+
+<button id="newArray">Generate Array</button>
+
+<button id="bubble">Bubble Sort</button>
+
+<button id="merge">Merge Sort</button>
+
+<button id="quick">Quick Sort</button>
+
+<br><br>
+
+<label>Array Size</label>
+<input type="range" min="20" max="150" value="80" id="size">
+
+<label>Speed</label>
+<input type="range" min="1" max="100" value="50" id="speed">
+
+</div>
+
+<div id="array"></div>
+
+<div class="info">
+
+<h3 id="complexity"></h3>
+
+</div>
+
+<h2>Algorithm Comparison Mode</h2>
+
+<div id="comparisonContainer">
+
+<div class="compareBox">
+
+<h3>Algorithm A</h3>
+
+<div id="arrayA"></div>
+
+</div>
+
+<div class="compareBox">
+
+<h3>Algorithm B</h3>
+
+<div id="arrayB"></div>
+
+</div>
+
+</div>
+
+<h2>Sorting Time Complexity Graph</h2>
+
+<div class="chartContainer">
+
+<canvas id="timeChart"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
